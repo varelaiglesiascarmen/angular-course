@@ -11,10 +11,19 @@
     color: white;
     text-decoration: none;
   }
+
+  nav a.active{
+    color: red;
+    text-decoration: underline;
+  }
 </style>
 
 <nav>
-  <a routerLink="/">Contador</a>
-  <a routerLink="/hero">Hero</a>
+  <!-- routerLink defines which component the link belongs to -->
+  <!-- routerLinkActive defines the class to apply when the link is active -->
+  <!-- routerLinkActiveOptions with exact: true means that the link will be active
+      only when the url is exactly the same as the link -->
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Contador</a>
+  <a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero</a>
   <!-- others a -->
 </nav>
