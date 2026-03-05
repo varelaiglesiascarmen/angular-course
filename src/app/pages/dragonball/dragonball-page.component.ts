@@ -1,17 +1,12 @@
 import { Component, signal, computed } from '@angular/core';
 import { NgClass } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
-
-interface Character {
-  id: number;
-  name: string;
-  power: number;
-}
+import { CharacterList } from '../../components/dragonball/character-list/character-list.component';
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-dragonball-page',
-  imports: [],/* NgClass */
+  imports: [CharacterList],
   templateUrl: './dragonball-page.component.html',
-  /* styleUrl: './dragonball-page.component.css', */
 })
 export class DragonballPageComponent {
 
