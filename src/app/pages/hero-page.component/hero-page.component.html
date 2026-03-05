@@ -9,10 +9,12 @@
     <dd>{{ age() }}</dd>
 
     <dt>Método:</dt>
-    <dd>{{ getHeroDescription() }}</dd>
+    <dd>{{ heroDescription() }}</dd>
 
     <dt>Capitalizado:</dt>
-    <dd>{{ name().toUpperCase() }}</dd>
+    <!-- <dd>{{ capitalizedName() }}</dd> -->
+    <!-- capitalized ussing UpperCasePipe -->
+    <dd>{{ name() | uppercase }}</dd>
   </dl>
 
   <button (click)="changeHero()">Cambiar nombre</button>
