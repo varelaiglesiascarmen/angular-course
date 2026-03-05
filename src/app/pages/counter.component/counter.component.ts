@@ -4,7 +4,7 @@ import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
   selector: 'app-counter.component',
   imports: [],
   templateUrl: './counter.component.html',
-  styleUrl: './counter.component.css',
+  /* styleUrl: './counter.component.css', */
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CounterComponent {

@@ -5,7 +5,7 @@ import { Component, signal, computed } from '@angular/core';
   selector: 'app-hero-page.component',
   imports: [ UpperCasePipe],
   templateUrl: './hero-page.component.html',
-  styleUrl: './hero-page.component.css',
+  /* styleUrl: './hero-page.component.css', */
 })
 export class HeroPageComponent {
 
