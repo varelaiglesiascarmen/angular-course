@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, computed } from '@angular/core';
+import { NgClass } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
 
 interface Character {
   id: number;
@@ -8,7 +9,7 @@ interface Character {
 
 @Component({
   selector: 'app-dragonball-page',
-  imports: [],
+  imports: [],/* NgClass */
   templateUrl: './dragonball-page.component.html',
   /* styleUrl: './dragonball-page.component.css', */
 })
@@ -19,4 +20,11 @@ export class DragonballPageComponent {
     { id: 2, name: 'Vegeta', power: 8000 },
     { id: 3, name: 'Piccolo', power: 3000 },
   ]);
+
+  /* powerClasses = computed(() => {
+    return {
+      'text-danger': true,
+    }
+  }); */
+
 }
