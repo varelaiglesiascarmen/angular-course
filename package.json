@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run fix-case",
+    "fix-case": "node scripts/fix-case.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
