@@ -1,15 +1,11 @@
+import { CharacterList } from '../../components/dragonball/character-list/character-list.component';
 import { Component, signal,  } from '@angular/core';
 import { NgClass } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
-
-interface Character {
-  id: number;
-  name: string;
-  power: number;
-}
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'dragonball-super',
-  imports: [],/* NgClass */
+  imports: [CharacterList],/* NgClass */
   templateUrl: './dragonball-super-page.component.html',
   /* styleUrl: './dragonball-page.component.css', */
 })
