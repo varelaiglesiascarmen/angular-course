@@ -1,5 +1,5 @@
 import { Component, signal, computed } from '@angular/core';
-import { CharacterListComponent } from '../../components/dragonball/character-list/character-list.component';
+import { CharacterListComponent } from '../../components/character-list/character-list.component';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({

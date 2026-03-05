@@ -1,4 +1,4 @@
-import { CharacterListComponent } from '../../components/dragonball/character-list/character-list.component';
+import { CharacterListComponent } from '../../components/character-list/character-list.component';
 import { CharacterAddComponent } from '../../components/character-add.component/character-add.component';
 import { Component, signal,  } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
@@ -17,4 +17,17 @@ export class DragonballSuperPageComponent {
     { id: 1, name: 'Goku', power: 9001 },
     { id: 2, name: 'Vegeta', power: 8000 },
   ]);
+
+  addCharacter(newCharacter: Character) {
+
+    this.characters.update(
+      list => [...list, newCharacter]
+    );
+
+  }
+
+  resetFields() {
+    this.name.set('');
+    this.power.set(0);
+  };
 }
