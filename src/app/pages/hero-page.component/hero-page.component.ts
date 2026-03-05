@@ -18,19 +18,25 @@ export class HeroPageComponent {
     return description;
   })
 
-  /* getHeroDescription(): string {
-    return `${ this.name() } have ${ this.age() } years old.`
-  } */
+  /*
+  before computing the signals:
+    getHeroDescription(): string {
+      return `${ this.name() } have ${ this.age() } years old.`
+    }
+  */
 
   changeHero = computed (() => {
     this.name.set('Spiderman');
     this.age.set(22);
   })
 
-  /* changeHero() {
-    this.name.set('Spiderman');
-    this.age.set(22);
-  } */
+  /*
+  before computing the signals:
+    changeHero() {
+      this.name.set('Spiderman');
+      this.age.set(22);
+    }
+  */
 
   resetForm() {
     this.name.set('Ironman');
@@ -44,8 +50,11 @@ export class HeroPageComponent {
   // computed signals
   capitalizedName = computed(() => this.name().toUpperCase());
 
-  /* capitalizeName() {
-    this.name.set(this.name().toUpperCase());
-  } */
+  /*
+  before computing the signals:
+    capitalizeName() {
+      this.name.set(this.name().toUpperCase());
+    }
+  */
 
 }
